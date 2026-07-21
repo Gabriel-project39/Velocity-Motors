@@ -1862,3 +1862,122 @@ font-size:20px;
 }
 
 }
+
+/*========================================
+SCROLL REVEAL
+========================================*/
+
+.car-card,
+.category-card,
+.service-card,
+.why-card,
+.arrival-card,
+.luxury-card,
+.stat-box{
+
+opacity:0;
+
+transform:translateY(70px);
+
+transition:.8s ease;
+
+}
+
+.show{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/*========================================
+ACTIVE NAV LINK
+========================================*/
+
+.nav-links a.active-link{
+
+color:var(--primary);
+
+}
+
+.nav-links a.active-link::after{
+
+width:100%;
+
+}
+
+/*=========================================
+PAGE LOAD EFFECT
+=========================================*/
+
+body{
+
+opacity:0;
+
+transition:opacity .8s ease;
+
+}
+
+body.loaded{
+
+opacity:1;
+
+}
+
+/*=========================================
+IMAGE 3D EFFECT
+=========================================*/
+
+.car-image img,
+.arrival-card img,
+.luxury-card img{
+
+transition:
+transform .4s ease,
+filter .4s ease;
+
+transform-style:preserve-3d;
+
+}
+
+.car-image img:hover,
+.arrival-card img:hover,
+.luxury-card img:hover{
+
+filter:brightness(1.08);
+
+}
+
+/*=========================================
+FORM ERROR
+=========================================*/
+
+.contact-form input,
+.contact-form textarea{
+
+transition:.3s;
+
+}
+
+@keyframes floatCar{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-18px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
