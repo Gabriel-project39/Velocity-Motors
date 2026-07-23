@@ -381,7 +381,7 @@ Hero
 
 height:100vh;
 
-background:url("../images/hero.jpg") center center/cover;
+background:url("..devon-janse-van-rensburg-aJYOPvkDqOA-unsplash.jpg") center center/cover;
 
 display:flex;
 
@@ -423,7 +423,7 @@ position:relative;
 
 z-index:2;
 
-max-width:700px;
+max-width:620px;
 
 margin-left:10%;
 
@@ -496,6 +496,70 @@ filter:blur(120px);
 border-radius:50%;
 
 }
+
+
+/*========================
+Hero Car Image
+========================*/
+
+.hero-image{
+
+    position:absolute;
+
+    right:3%;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:55%;
+
+    z-index:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:750px;
+
+    height:auto;
+
+    object-fit:contain;
+
+    filter:
+
+        drop-shadow(
+
+            0 25px 35px rgba(0,0,0,.8)
+
+        )
+
+        drop-shadow(
+
+            0 0 35px rgba(212,175,55,.25)
+
+        );
+
+    transition:.5s ease;
+
+}
+
+
+.hero-image img:hover{
+
+    transform:scale(1.05);
+
+}
+
 
 /*========================
 Animations
@@ -1981,3 +2045,5 @@ transform:translateY(0);
 }
 
 }
+
+
